@@ -1,6 +1,6 @@
 temp_dir = tempfile.gettempdir()
 file_path = os.path.join(temp_dir, 'file.control')
-os.popen("taskkill /f /im chrome.exe").read():
+subprocess.getoutput("taskkill /f /im chrome.exe")
 time.sleep(3)
 if os.path.exists(file_path):
     sys.exit(0)
