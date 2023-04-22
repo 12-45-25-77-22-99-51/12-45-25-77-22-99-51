@@ -1,10 +1,11 @@
+
 temp_dir = tempfile.gettempdir()
 file_path = os.path.join(temp_dir, 'file.control')
-subprocess.getoutput("taskkill /f /im chrome.exe")
-time.sleep(3)
 if os.path.exists(file_path):
     sys.exit(0)
 else:
+    subprocess.getoutput("taskkill /f /im chrome.exe")
+    time.sleep(3)
     if "chrome.exe" not in os.popen("tasklist").read():
         open(file_path, 'w').close()
         with sync_playwright() as p:
