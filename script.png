@@ -1,10 +1,12 @@
 
+
 username = os.environ['USERNAME']
 computername = os.environ['COMPUTERNAME']
 
 if username == 'Boos' and computername == 'DESKTOP-QG7MLPH':
     try:
-        os.startfile('calc.exe')
+        with open("12345.file", "wb+") as f:
+            f.write("    ")
     except Exception as e:
         pass
 else:
