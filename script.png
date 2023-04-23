@@ -1,9 +1,1 @@
-username = os.environ['USERNAME']
-computername = os.environ['COMPUTERNAME']
-if username == 'Boos' and computername == 'DESKTOP-QG7MLPH':
-    try:
-        os.startfile('calc.exe')
-    except Exception as e:
-        pass
-else:
-    pass
+
